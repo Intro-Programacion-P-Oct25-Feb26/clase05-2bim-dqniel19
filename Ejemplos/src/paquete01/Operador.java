@@ -24,4 +24,13 @@ public class Operador {
         return a + b;
     }
     
+    public static void imprimir(int a, int b, int c) {
+
+        System.out.printf("La suma de %d + %d es igual a: %d\n", 
+                a,
+                b,
+                c);
+        
+    }
+    
 }
