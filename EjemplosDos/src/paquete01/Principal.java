@@ -9,6 +9,7 @@ import paquete02.DatoPersonal;
 import paquete03.DatosUbicacion;
 import paquete04.DatoAcademico;
 import paquete05.DatoFinal;
+import paquete06.*;
 
 /**
  *
@@ -29,17 +30,13 @@ public class Principal {
         ciudad = DatosUbicacion.obtenerCiudad();
         misNotas = DatoAcademico.obtenerNotas(4);
         promedio = DatoFinal.obtenerPromedio(misNotas);
+        Reporte.imprimir(nombre, apellidoRetornado, ciudad, misNotas, promedio);
         
-        
-        System.out.printf("Los datos ingresados son:\n"
-                + "Nombre: %s\n"
-                + "Apellido: %s\n"
-                + "Ciudad: %s\n"
-                + "Promedio: %.2f\n",
-                nombre,
-                apellidoRetornado,
-                ciudad,
-                promedio);
     }
-    
 }
+
+// Crear una solución donde existan funciones que pidan por teclado y devuelva cada uno
+// de los siguientes datos: nombre, apellido, ciudad, notas y promedio de notas, para el 
+// promedio, se necesitan primero que la funcion para almacenar las 4 notas devuelva un 
+// arreglo unidimensional y con ello calcularlo. Todas las funciones deben ser llamadas 
+// desde el metodo main en la clase Principal y para finalizar, deben ser impresas en un reporte.
